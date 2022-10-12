@@ -51,3 +51,6 @@ num = Convert.ToDouble(sayi);
         break;
         }
     }
+Console.ReadKey(true);
+Console.Clear();
+goto ilk;
