@@ -89,7 +89,7 @@ while (karakter1.Key != ConsoleKey.Enter);
 Console.WriteLine("");
 y = Convert.ToInt32(gir1);
 
-for (int sayi = 0; sayi < x; sayi++)
+for (int sayi = 0; sayi <= x; sayi++)
 {
     int birler = (sayi % 10);
     int onlar = (((sayi % 100) - birler) / 10);
