@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Girilen Sayiya Kadar Rakam Bulup Saydirma/1.0.0": {
+        "runtime": {
+          "Girilen Sayiya Kadar Rakam Bulup Saydirma.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Girilen Sayiya Kadar Rakam Bulup Saydirma/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

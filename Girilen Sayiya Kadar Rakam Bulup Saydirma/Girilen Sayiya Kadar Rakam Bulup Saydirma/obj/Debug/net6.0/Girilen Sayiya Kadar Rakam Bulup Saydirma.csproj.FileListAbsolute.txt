@@ -1,0 +1,15 @@
+C:\Users\ibrahim.gun\source\repos\Girilen Sayiya Kadar Rakam Bulup Saydirma\Girilen Sayiya Kadar Rakam Bulup Saydirma\bin\Debug\net6.0\Girilen Sayiya Kadar Rakam Bulup Saydirma.exe
+C:\Users\ibrahim.gun\source\repos\Girilen Sayiya Kadar Rakam Bulup Saydirma\Girilen Sayiya Kadar Rakam Bulup Saydirma\bin\Debug\net6.0\Girilen Sayiya Kadar Rakam Bulup Saydirma.deps.json
+C:\Users\ibrahim.gun\source\repos\Girilen Sayiya Kadar Rakam Bulup Saydirma\Girilen Sayiya Kadar Rakam Bulup Saydirma\bin\Debug\net6.0\Girilen Sayiya Kadar Rakam Bulup Saydirma.runtimeconfig.json
+C:\Users\ibrahim.gun\source\repos\Girilen Sayiya Kadar Rakam Bulup Saydirma\Girilen Sayiya Kadar Rakam Bulup Saydirma\bin\Debug\net6.0\Girilen Sayiya Kadar Rakam Bulup Saydirma.dll
+C:\Users\ibrahim.gun\source\repos\Girilen Sayiya Kadar Rakam Bulup Saydirma\Girilen Sayiya Kadar Rakam Bulup Saydirma\bin\Debug\net6.0\Girilen Sayiya Kadar Rakam Bulup Saydirma.pdb
+C:\Users\ibrahim.gun\source\repos\Girilen Sayiya Kadar Rakam Bulup Saydirma\Girilen Sayiya Kadar Rakam Bulup Saydirma\obj\Debug\net6.0\Girilen Sayiya Kadar Rakam Bulup Saydirma.csproj.AssemblyReference.cache
+C:\Users\ibrahim.gun\source\repos\Girilen Sayiya Kadar Rakam Bulup Saydirma\Girilen Sayiya Kadar Rakam Bulup Saydirma\obj\Debug\net6.0\Girilen Sayiya Kadar Rakam Bulup Saydirma.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ibrahim.gun\source\repos\Girilen Sayiya Kadar Rakam Bulup Saydirma\Girilen Sayiya Kadar Rakam Bulup Saydirma\obj\Debug\net6.0\Girilen Sayiya Kadar Rakam Bulup Saydirma.AssemblyInfoInputs.cache
+C:\Users\ibrahim.gun\source\repos\Girilen Sayiya Kadar Rakam Bulup Saydirma\Girilen Sayiya Kadar Rakam Bulup Saydirma\obj\Debug\net6.0\Girilen Sayiya Kadar Rakam Bulup Saydirma.AssemblyInfo.cs
+C:\Users\ibrahim.gun\source\repos\Girilen Sayiya Kadar Rakam Bulup Saydirma\Girilen Sayiya Kadar Rakam Bulup Saydirma\obj\Debug\net6.0\Girilen Sayiya Kadar Rakam Bulup Saydirma.csproj.CoreCompileInputs.cache
+C:\Users\ibrahim.gun\source\repos\Girilen Sayiya Kadar Rakam Bulup Saydirma\Girilen Sayiya Kadar Rakam Bulup Saydirma\obj\Debug\net6.0\Girilen Sayiya Kadar Rakam Bulup Saydirma.dll
+C:\Users\ibrahim.gun\source\repos\Girilen Sayiya Kadar Rakam Bulup Saydirma\Girilen Sayiya Kadar Rakam Bulup Saydirma\obj\Debug\net6.0\refint\Girilen Sayiya Kadar Rakam Bulup Saydirma.dll
+C:\Users\ibrahim.gun\source\repos\Girilen Sayiya Kadar Rakam Bulup Saydirma\Girilen Sayiya Kadar Rakam Bulup Saydirma\obj\Debug\net6.0\Girilen Sayiya Kadar Rakam Bulup Saydirma.pdb
+C:\Users\ibrahim.gun\source\repos\Girilen Sayiya Kadar Rakam Bulup Saydirma\Girilen Sayiya Kadar Rakam Bulup Saydirma\obj\Debug\net6.0\Girilen Sayiya Kadar Rakam Bulup Saydirma.genruntimeconfig.cache
+C:\Users\ibrahim.gun\source\repos\Girilen Sayiya Kadar Rakam Bulup Saydirma\Girilen Sayiya Kadar Rakam Bulup Saydirma\obj\Debug\net6.0\ref\Girilen Sayiya Kadar Rakam Bulup Saydirma.dll

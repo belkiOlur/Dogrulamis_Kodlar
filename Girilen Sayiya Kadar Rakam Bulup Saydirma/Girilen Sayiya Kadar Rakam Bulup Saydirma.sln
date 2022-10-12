@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Girilen Sayiya Kadar Rakam Bulup Saydirma", "Girilen Sayiya Kadar Rakam Bulup Saydirma\Girilen Sayiya Kadar Rakam Bulup Saydirma.csproj", "{ABFC39AF-8E41-49B1-A942-09BF4E59703B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABFC39AF-8E41-49B1-A942-09BF4E59703B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABFC39AF-8E41-49B1-A942-09BF4E59703B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABFC39AF-8E41-49B1-A942-09BF4E59703B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABFC39AF-8E41-49B1-A942-09BF4E59703B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A555C7F0-BA55-4305-B2D5-BCC36349F486}
+	EndGlobalSection
+EndGlobal
