@@ -9,3 +9,4 @@ for (int i = 0; i<1000; i++)
     
 }
 Console.Write("1000'e kadar 3 veya 5'in katları toplamı = "+toplam);
+Console.ReadKey(true);
