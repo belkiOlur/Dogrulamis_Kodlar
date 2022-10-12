@@ -1,0 +1,85 @@
+﻿ilk:
+double val = 0;
+string sayi = "";
+Console.Write("Genişlik Giriniz =");
+ConsoleKeyInfo karakter;
+do
+{
+    karakter = Console.ReadKey(true);
+    if (karakter.Key != ConsoleKey.Backspace)
+    {
+        bool kontrol = double.TryParse(karakter.KeyChar.ToString(), out val);
+        if (kontrol)
+        {
+            sayi += karakter.KeyChar;
+            Console.Write(karakter.KeyChar);
+        }
+    }
+    else
+
+    {
+        if (karakter.Key == ConsoleKey.Backspace && sayi.Length > 0)
+        {
+            sayi = sayi.Substring(0, (sayi.Length - 1));
+            Console.Write("\b \b");
+        }
+    }
+    if (karakter.Key == ConsoleKey.Enter && sayi.Length <= 0)
+    {
+        Console.Write("\n");
+        Console.Clear();
+        goto ilk;
+    }
+}
+while (karakter.Key != ConsoleKey.Enter);
+Console.WriteLine("");
+int sutun = Convert.ToInt32(sayi);
+if (5 > sutun || sutun > 20)
+{
+    Console.Write("Lütfen 5 ile 20 Arasında Sayi Giriniz\n");
+    goto ilk;
+}
+
+
+int x = sutun / 2;
+int y = (sutun - 1) * 2;
+
+for (int i = 0; i < sutun; i++)
+{
+    Console.Write("* ");
+}
+Console.Write("\n");
+for (int i = 0; i <= x; i++)
+{
+    Console.WriteLine("*");
+}
+for (int i = 0; i < 1; i++)
+{
+    Console.Write("*");
+    for (int j = 0; j < sutun; j++)
+    {
+        Console.Write(" ");
+    }
+    for (int j = 0; j < sutun / 2; j++)
+    {
+        Console.Write("* ");
+    }
+}
+Console.Write("\n");
+for (int i = 0; i <= x; i++)
+{
+    Console.Write("*");
+    for (int j = 0; j < y; j++)
+    {
+        Console.Write(" ");
+    }
+    Console.Write("*");
+    Console.Write("\n");
+
+}
+for (int i = 0; i < sutun; i++)
+{
+    Console.Write("* ");
+}
+Console.Write("\n");
+goto ilk;
