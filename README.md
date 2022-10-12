@@ -1,1 +1,0 @@
-# Dogrulamis_Kodlar mod 
