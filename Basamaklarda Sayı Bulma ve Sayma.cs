@@ -3,7 +3,7 @@ int sayac = 0;
 
     for (int sayi = 0; sayi < 1000; sayi++)
     {
-    int birler = (((sayi % 1000) % 100) % 10);
+    int birler = (sayi % 10);
     int onlar = (((sayi % 100) - birler) / 10);
     int yuzler = ((sayi  - (onlar * 10) - (birler)) / 100);
   
