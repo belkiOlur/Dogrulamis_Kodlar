@@ -1,6 +1,5 @@
 ﻿ilk:
 double val = 0;
-bool asal = true;
 string sayi = "";
 double i = 0;
 double num = 0;
@@ -39,18 +38,17 @@ while (karakter.Key != ConsoleKey.Enter);
 Console.WriteLine("");
 num = Convert.ToDouble(sayi);
 
-    for (i = 2; i < num; i++)
+    for (i = 2; i <= num; i++)
     {
-        if (num % i == 0)
-        {
-            Console.WriteLine(i);
-            sayac++;
-        }
-        if(sayac == 4)
-        {
-        break;
-        }
+    if (num % i == 0)
+    {
+        Console.WriteLine(i);
+        num = num / i;
     }
+
+    }
+
+
 Console.ReadKey(true);
 Console.Clear();
 goto ilk;
