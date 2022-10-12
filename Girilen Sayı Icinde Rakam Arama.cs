@@ -49,7 +49,7 @@ enbas:
 double val1 = 0;
 string gir1 = "";
 int y = 0;
-Console.Write("Aranacak Sayıyı giriniz =");
+Console.Write("Aranacak Rakamı Giriniz =");
 ConsoleKeyInfo karakter1;
 do
 {
@@ -75,12 +75,12 @@ do
     if (karakter1.Key == ConsoleKey.Enter && gir1.Length <= 0)
     {
         Console.Write("\n");
-        Console.Write("Boş Geçilemez Lütfen Bir Sayı Giriniz \n");
+        Console.Write("Boş Geçilemez Lütfen Bir Rakam Giriniz \n");
         goto enbas;
     }
     if (gir1.Length > 1)
     {
-        Console.Write("\nLütfen Tek Basamaklı Bir Sayı Giriniz\n");
+        Console.Write("\nRakam Tek Basamaklı Sayıdır. Lütfen Bir Rakam Giriniz\n");
         Console.ReadKey(true);
         goto enbas;
     }
