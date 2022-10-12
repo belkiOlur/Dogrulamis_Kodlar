@@ -1,0 +1,189 @@
+ilk:
+double val = 0;
+string sayi = "";
+int i = 1;
+int x = 0;
+Console.Write("Notu Hesaplanacak Öğrenci Sayısı Giriniz =");
+ConsoleKeyInfo karakter;
+do
+{
+    karakter = Console.ReadKey(true);
+    if (karakter.Key != ConsoleKey.Backspace)
+    {
+        bool kontrol = double.TryParse(karakter.KeyChar.ToString(), out val);
+        if (kontrol)
+        {
+            sayi += karakter.KeyChar;
+            Console.Write(karakter.KeyChar);
+        }
+    }   
+    else
+
+    {
+        if (karakter.Key == ConsoleKey.Backspace && sayi.Length > 0)
+        {
+            sayi = sayi.Substring(0, (sayi.Length - 1));
+            Console.Write("\b \b");
+        }
+    }
+    if (karakter.Key == ConsoleKey.Enter && sayi.Length <= 0)
+    {
+        Console.Write("\n");
+         Console.Write("Öğrenci Sayısı Boş Geçilemez Lütfen Bir Sayı Giriniz \n");
+        goto ilk;
+    }
+    if (sayi.Length > 3)
+    {
+        Console.Write("\nLütfen 3 Basamaklı Bir Sayı Giriniz\n");
+        Console.ReadKey(true);
+        Console.Clear();
+        goto ilk;
+    }
+}
+while (karakter.Key != ConsoleKey.Enter);
+    Console.WriteLine("");
+    x = Convert.ToInt32(sayi);
+
+    do
+    {
+    enbas:
+        double val1 = 0;
+        string sayi1 = "";
+        Console.Write(i + ". Vize Notunu Giriniz =");
+        ConsoleKeyInfo karakter1;
+        do
+        {
+            karakter1 = Console.ReadKey(true);
+            if (karakter1.Key != ConsoleKey.Backspace)
+            {
+                bool kontrol = double.TryParse(karakter1.KeyChar.ToString(), out val1);
+                if (kontrol)
+                {
+                    sayi1 += karakter1.KeyChar;
+                    Console.Write(karakter1.KeyChar);
+                }
+            }
+            else
+
+            {
+                if (karakter1.Key == ConsoleKey.Backspace && sayi1.Length > 0)
+                {
+                    sayi1 = sayi1.Substring(0, (sayi1.Length - 1));
+                    Console.Write("\b \b");
+                }
+            }
+        if (karakter1.Key == ConsoleKey.Enter && sayi1.Length <= 0)
+        {
+            Console.Write("\n Vize Notu Boş Geçilemez Lütfen 0 ila 100 Arası Bir Sayı Giriniz \n");
+            goto enbas;
+        }
+        if (sayi1.Length > 3)
+        {
+            Console.Write("\nLütfen 3 Basamaklı Bir Sayı Giriniz\n");
+            goto enbas;
+        }
+    }
+        while (karakter1.Key != ConsoleKey.Enter);
+        Console.WriteLine("");
+        int vize = Convert.ToInt32(sayi1);
+        if (0 > vize)
+        {
+            Console.Write("Vize notu 0 ile 100 arasinda olmalidir.\n");
+            goto enbas;
+        }
+        else if (vize > 100)
+        {
+            Console.Write("Vize notu 0 ile 100 arasinda olmalidir.\n");
+            goto enbas;
+        }
+        else
+        {
+            goto devam;
+        }
+
+    devam:
+        double val2 = 0;
+        string sayi2 = "";
+        Console.Write(i + ". Final Notunu Giriniz =");
+        ConsoleKeyInfo karakter2;
+        do
+        {
+            karakter2 = Console.ReadKey(true);
+            if (karakter2.Key != ConsoleKey.Backspace)
+            {
+                bool kontrol = double.TryParse(karakter2.KeyChar.ToString(), out val2);
+                if (kontrol)
+                {
+                    sayi2 += karakter2.KeyChar;
+                    Console.Write(karakter2.KeyChar);
+                }
+            }
+            else
+
+            {
+                if (karakter2.Key == ConsoleKey.Backspace && sayi2.Length > 0)
+                {
+                    sayi2 = sayi2.Substring(0, (sayi2.Length - 1));
+                    Console.Write("\b \b");
+                }
+            }
+        if (karakter2.Key == ConsoleKey.Enter && sayi2.Length <= 0)
+        {
+            Console.Write("\n Final Notu Boş Geçilemez Lütfen 0 ila 100 Arası Bir Sayı Giriniz \n");
+            goto devam;
+        }
+        if (sayi2.Length > 3)
+        {
+            Console.Write("\nLütfen 3 Basamaklı Bir Sayı Giriniz\n");
+            goto devam;
+        }
+    }
+        while (karakter2.Key != ConsoleKey.Enter);
+        Console.WriteLine("");
+        int final = Convert.ToInt32(sayi2);
+        if (0 > final)
+        {
+            Console.Write("Final notu 0 ile 100 arasinda olmalidir.\n");
+            goto enbas;
+        }
+        else if (final > 100)
+        {
+            Console.Write("Final notu 0 ile 100 arasinda olmalidir.\n");
+            goto devam;
+        }
+        else
+        {
+            goto devam1;
+        }
+
+    devam1:
+        double ortalama = (vize * 0.4) + (final * 0.6);
+        if (ortalama > 89)
+        {
+            Console.Write("Notunuz = AA\n");
+        }
+
+        else if (ortalama > 75)
+        {
+            Console.Write("Notunuz = AB\n");
+        }
+
+        else if (ortalama > 60)
+        {
+            Console.Write("Notunuz = BB\n");
+        }
+
+        else if (ortalama > 50)
+        {
+            Console.Write("Notunuz = CC\n");
+        }
+        else
+        {
+            Console.Write("Notunuz = FF\n");
+        }
+
+        Console.Write("___________________\n");
+        Console.ReadKey(true);
+        Console.Clear();
+        i++;
+    } while (i <= x);
