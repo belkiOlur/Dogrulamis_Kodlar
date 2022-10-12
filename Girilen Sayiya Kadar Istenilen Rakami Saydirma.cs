@@ -4,7 +4,7 @@ ilk:
 double val = 0;
 string gir = "";
 int x = 0;
-Console.Write("En Fazla 5 Basamaklı Sayı giriniz =");
+Console.Write("En Fazla 4 Basamaklı Sayı giriniz =");
 ConsoleKeyInfo karakter;
 do
 {
@@ -30,12 +30,12 @@ do
     if (karakter.Key == ConsoleKey.Enter && gir.Length <= 0)
     {
         Console.Write("\n");
-        Console.Write("Boş Geçilemez Lütfen En Fazla 5 Basamaklı Bir Sayı Giriniz \n");
+        Console.Write("Boş Geçilemez Lütfen En Fazla 4 Basamaklı Bir Sayı Giriniz \n");
         goto ilk;
     }
-    if (gir.Length > 5)
+    if (gir.Length > 4)
     {
-        Console.Write("\nLütfen En Fazla 5 Basamaklı Bir Sayı Giriniz\n");
+        Console.Write("\nLütfen En Fazla 4 Basamaklı Bir Sayı Giriniz\n");
         Console.ReadKey(true);
         Console.Clear();
         goto ilk;
