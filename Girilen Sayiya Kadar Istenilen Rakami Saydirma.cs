@@ -1,4 +1,4 @@
-﻿internal class Program
+internal class Program
 {
     private static void Main(string[] args)
     {
@@ -105,7 +105,21 @@
             int onlar = ((sayi % 100 - birler) / 10);
             int yuzler = ((sayi - onlar * 10 - birler) / 100);
             int binler = ((sayi - yuzler * 100 - onlar * 10 - birler) / 1000);
-            
+
+            if ( sayi < 10 && y==0) //Fatih Fonksiyonsuz Çözüm Başlangıç
+            {
+                onlar = 1;
+                yuzler = 1;
+                binler = 1;
+            } else if (sayi < 100 && y == 0)
+            {
+                yuzler = 1;
+                binler = 1;
+            } else if (sayi < 1000 && y == 0)
+            {
+                binler = 1;
+            }//Fatih Fonksiyonsuz Çözüm Son
+
             if (birler == y)
             {
                 sayac++;
@@ -124,6 +138,7 @@
             }           
 
         }
+        /* Fonksiyon Hesabı ile 0 'a Çözüm Fatih + Mrhmrt Katkısı
         if (y == 0 && x < 10)
         {
             int sayi2 = 0;
@@ -148,6 +163,7 @@
             sayi2 = 1110 + ((x - 1000) + 1) * 0;
             sayac -= sayi2;
         }
+        */
         Console.Write("1'den " + x + "'e kadar " + y + " rakamı adeti = " + sayac + "\n");
         Console.Write("______________________________________\n");
         Console.Write("Tekrar Denemek İçin Bir Tuşa Basınız\n");
