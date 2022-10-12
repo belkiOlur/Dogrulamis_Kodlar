@@ -2,13 +2,17 @@
 {
     private static void Main(string[] args)
     {
-    
-        
+
+
     ilk:
         int sayac = 0;
+        int sayi = 0;
         double val = 0;
         string gir = "";
-        int x = 0;
+  
+
+
+
         Console.Write("En Fazla 4 Basamaklı Sayı giriniz =");
         ConsoleKeyInfo karakter;
         do
@@ -48,8 +52,8 @@
         }
         while (karakter.Key != ConsoleKey.Enter);
         Console.WriteLine("");
-        x = Convert.ToInt32(gir);
-
+        int x = Convert.ToInt32(gir);
+        
     enbas:
         double val1 = 0;
         string gir1 = "";
@@ -94,13 +98,14 @@
         Console.WriteLine("");
         y = Convert.ToInt32(gir1);
 
-        for (int sayi = 0; sayi <= x; sayi++)
-        {
-            int birler = sayi % 10;
-            int onlar = (sayi % 100 - birler) / 10;
-            int yuzler = (sayi - onlar * 10 - birler) / 100;
-            int binler = (sayi - yuzler * 100 - onlar * 10 - birler) / 1000;
 
+        for (sayi = 0; sayi <= x; sayi++)
+        {
+            int birler = (sayi % 10);
+            int onlar = ((sayi % 100 - birler) / 10);
+            int yuzler = ((sayi - onlar * 10 - birler) / 100);
+            int binler = ((sayi - yuzler * 100 - onlar * 10 - birler) / 1000);
+            
             if (birler == y)
             {
                 sayac++;
@@ -116,10 +121,34 @@
             if (binler == y)
             {
                 sayac++;
-            }
-        }
+            }           
 
-        Console.Write("1'den " + x + "'e kadar " + y + " rakamı adeti = " + sayac+"\n");
+        }
+        if (y == 0 && x < 10)
+        {
+            int sayi2 = 0;
+            sayi2 = (x + 1) * 3;
+            sayac -= sayi2;
+        }
+        if (y == 0 && x >= 10 && x < 100)
+        {
+            int sayi2 = 0;
+            sayi2 = 30 + ((x - 10) + 1) * 2;
+            sayac -= sayi2;
+        }
+        if (y == 0 && x >= 100 && x < 1000)
+        {
+            int sayi2 = 0;
+            sayi2 = 210 + ((x - 100) + 1);
+            sayac -= sayi2;
+        }
+        if (y == 0 && x >= 1000 && x < 10000)
+        {
+            int sayi2 = 0;
+            sayi2 = 1110 + ((x - 1000) + 1) * 0;
+            sayac -= sayi2;
+        }
+        Console.Write("1'den " + x + "'e kadar " + y + " rakamı adeti = " + sayac + "\n");
         Console.Write("______________________________________\n");
         Console.Write("Tekrar Denemek İçin Bir Tuşa Basınız\n");
         Console.Write("\n");
