@@ -1,0 +1,15 @@
+int sayac = 0;
+for (int sayi = 1; 0 < sayi; sayi++)
+{
+    if(sayi % 20 == 0 && sayi % 19 == 0 && sayi % 18 == 0 && sayi % 17 == 0 && sayi % 16 == 0 && sayi % 13 == 0 && sayi % 11 == 0 && sayi % 7 == 0)
+    {
+        Console.WriteLine(sayi);
+        sayac++;
+    }
+    if(sayac == 4)
+    {
+        break;
+    }
+}
+Console.Write("\nBeklediğiniz İçin Teşekkürler");
+Console.ReadKey(true);
