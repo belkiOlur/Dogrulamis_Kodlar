@@ -1,0 +1,21 @@
+for (int carp1 = 900; carp1 < 1000; carp1++)
+{
+    for (int carp2 = 900; carp2 < 1000; carp2++)
+    {
+        
+        string sayi = Convert.ToString(carp1 * carp2);
+
+        if (sayi == new String(sayi.Reverse().ToArray()))
+        {
+            Console.WriteLine("X=" + carp1 + " Y=" + carp2);
+            string sonuc = sayi;
+
+            Console.WriteLine("Polindrome is: " + sonuc);
+        }
+
+        else { continue; }
+    }  
+
+}
+
+
