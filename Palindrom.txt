@@ -10,7 +10,7 @@ for (int carp1 = 900; carp1 < 1000; carp1++)
             Console.WriteLine("X=" + carp1 + " Y=" + carp2);
             string sonuc = sayi;
 
-            Console.WriteLine("Palinrome = " + sonuc);
+            Console.WriteLine("Palindrom = " + sonuc);
         }
 
         else { continue; }
