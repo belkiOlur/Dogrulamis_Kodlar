@@ -2,7 +2,6 @@ ilk:
 int t = 0;
 int tk = 0;
 int kt = 0;
-int sayac = 0;
 double val = 0;
 string gir = "";
 
