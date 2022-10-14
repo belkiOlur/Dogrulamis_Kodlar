@@ -1,0 +1,14 @@
+int n = 0;
+int m =0;
+Console.Write("Bir Sayı Giriniz = ");
+int sayi =Convert.ToInt32(Console.ReadLine());
+n = ((sayi * (sayi + 1))/2)* ((sayi * (sayi + 1)) / 2);
+m = ((sayi * (sayi + 1) * (2 * sayi + 1)) / 6);
+int fark = n - m;
+int oran = n / m;
+Console.WriteLine("Toplamın Karesi = "+n);
+//Console.WriteLine("Kareler Toplamı = "+m);
+Console.WriteLine("Fark = " + fark);
+Console.WriteLine("Oran= " + oran);
+Console.ReadKey(true);
+Console.Clear();
