@@ -48,8 +48,7 @@ for (int i = 0; i < n; i++)
     b = fibo;
     if (fibo <4000000 && fibo % 2 == 0) 
     {
-        sum += fibo;
-        
+        sum += fibo;        
     }
     
 }
