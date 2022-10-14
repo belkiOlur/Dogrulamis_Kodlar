@@ -1,13 +1,59 @@
-int n = 0;
-int m =0;
+ilk:
+int t = 0;
+int tk = 0;
+int kt = 0;
+int sayac = 0;
+double val = 0;
+string gir = "";
+
 Console.Write("Bir Sayı Giriniz = ");
-int sayi =Convert.ToInt32(Console.ReadLine());
-n = ((sayi * (sayi + 1))/2)* ((sayi * (sayi + 1)) / 2);
-m = ((sayi * (sayi + 1) * (2 * sayi + 1)) / 6);
-int fark = n - m;
-int oran = n / m;
-Console.WriteLine("Toplamın Karesi = "+n);
-//Console.WriteLine("Kareler Toplamı = "+m);
+ConsoleKeyInfo karakter;
+do
+{
+    karakter = Console.ReadKey(true);
+    if (karakter.Key != ConsoleKey.Backspace)
+    {
+        bool kontrol = double.TryParse(karakter.KeyChar.ToString(), out val);
+        if (kontrol)
+        {
+            gir += karakter.KeyChar;
+            Console.Write(karakter.KeyChar);
+        }
+    }
+    else
+
+    {
+        if (karakter.Key == ConsoleKey.Backspace && gir.Length > 0)
+        {
+            gir = gir.Substring(0, gir.Length - 1);
+            Console.Write("\b \b");
+        }
+    }
+    if (karakter.Key == ConsoleKey.Enter && gir.Length <= 0)
+    {
+        Console.Write("\n");
+        Console.Write("Boş Geçilemez Lütfen En Fazla 4 Basamaklı Bir Sayı Giriniz \n");
+        goto ilk;
+    }
+    if (gir.Length > 4)
+    {
+        Console.Write("\nLütfen En Fazla 4 Basamaklı Bir Sayı Giriniz\n");
+        Console.ReadKey(true);
+        Console.Clear();
+        goto ilk;
+    }
+}
+while (karakter.Key != ConsoleKey.Enter);
+Console.WriteLine("");
+int sayi = Convert.ToInt32(gir);
+
+t = ((sayi * (sayi + 1)) / 2) ;
+tk = (int)Math.Pow(t, 2);
+kt = ((sayi * (sayi + 1) * (2 * sayi + 1)) / 6);
+int fark = tk - kt;
+int oran = tk / kt;
+Console.WriteLine("Toplamın Karesi = " + tk);
+Console.WriteLine("Kareler Toplamı = "+ kt);
 Console.WriteLine("Fark = " + fark);
 Console.WriteLine("Oran= " + oran);
 Console.ReadKey(true);
