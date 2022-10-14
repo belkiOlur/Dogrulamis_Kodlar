@@ -12,7 +12,6 @@ for (int carp1 = 900; carp1 < 1000; carp1++)
 
             Console.WriteLine("Palindrom = " + sonuc);
         }
-
         else { continue; }
     }  
 
