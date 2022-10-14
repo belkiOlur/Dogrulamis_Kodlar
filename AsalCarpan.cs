@@ -45,7 +45,6 @@ num = Convert.ToDouble(sayi);
         Console.WriteLine(i);
         num = num / i;
     }
-
     }
 
 
