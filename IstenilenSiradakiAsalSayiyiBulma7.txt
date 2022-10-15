@@ -7,6 +7,7 @@ Console.Write("Kaçıncı Sıradaki Asal Sayıyı Bulmak İstersiniz = ");
 ConsoleKeyInfo karakter;
 do
 {
+    
     karakter = Console.ReadKey(true);
     if (karakter.Key != ConsoleKey.Backspace)
     {
@@ -43,6 +44,7 @@ do
 while (karakter.Key != ConsoleKey.Enter);
 Console.WriteLine("");
 int sayi = Convert.ToInt32(gir);
+Console.Write("Girilen Her 100.000 Sayıyı Taramam Yaklaşık 8 dakika Sürüyo Lütfen Acele Etmeyin\n\n");
 
 for (int i = 2; i > 0; i++)
 {
@@ -70,7 +72,7 @@ for (int i = 2; i > 0; i++)
     }
     
 }
-Console.Write("\n Tekrar Denemek İçin Bir Tuşa Basınız");
+Console.Write("\nTekrar Denemek İçin Bir Tuşa Basınız");
 Console.ReadKey(true);
 Console.Clear();
 goto ilk;
