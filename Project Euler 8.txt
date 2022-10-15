@@ -1,0 +1,21 @@
+string sayi = System.IO.File.ReadAllText(string.Concat(System.Environment.CurrentDirectory.ToString(), "\\10001.txt"));
+sayi = sayi.Replace("\r", string.Empty).Replace("\n", string.Empty);
+long enbuyuk13 = 0;
+long buyuk13;
+
+for (int i = 0; i < sayi.Length - 12; i++)
+{
+    buyuk13 = ((int)sayi[i] - 48);
+    for (int j = i + 1; j < i + 13; j++)
+    {
+        buyuk13 = buyuk13 * ((int)sayi[j] - 48);
+        if (enbuyuk13 <= buyuk13)
+        {
+            enbuyuk13 = buyuk13;
+        }
+    }
+}
+Console.Write(enbuyuk13+"\n");
+Console.ReadKey(true);
+// Bu kod bana ait değil sadece çalşır hale getirdim.
+//Ayrıca dosyadan okutmayı öğrendim.
