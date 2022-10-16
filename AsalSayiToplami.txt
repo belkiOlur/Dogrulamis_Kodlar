@@ -1,0 +1,24 @@
+Boolean asal = true;
+double sum = 0;
+for (double i = 2; i < 2000000; i++)
+{
+    for (double j = 2; j < i; j++)
+    {
+        if (i % j == 0)
+        {
+            asal = false;
+            break;
+        }
+        else
+        {
+            asal = true;
+        }       
+
+    }
+    if (asal)
+    {
+        sum += i; 
+    }
+}
+Console.WriteLine(sum);
+Console.ReadKey(true);
