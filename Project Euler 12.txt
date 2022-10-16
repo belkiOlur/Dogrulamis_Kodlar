@@ -1,0 +1,69 @@
+using System;
+
+ilk:
+ulong i = 0;
+ulong j = 0;
+int x = 0;
+ulong sum = 0;
+double val = 0;
+string gir = "";
+int sayac = 0;
+Console.Write("En Fazla 4 Basamaklı Sayı giriniz =");
+ConsoleKeyInfo karakter;
+do
+{
+    karakter = Console.ReadKey(true);
+    if (karakter.Key != ConsoleKey.Backspace)
+    {
+        bool kontrol = double.TryParse(karakter.KeyChar.ToString(), out val);
+        if (kontrol)
+        {
+            gir += karakter.KeyChar;
+            Console.Write(karakter.KeyChar);
+        }
+    }
+    else
+
+    {
+        if (karakter.Key == ConsoleKey.Backspace && gir.Length > 0)
+        {
+            gir = gir.Substring(0, gir.Length - 1);
+            Console.Write("\b \b");
+        }
+    }
+    if (karakter.Key == ConsoleKey.Enter && gir.Length <= 0)
+    {
+        Console.Write("\n");
+        Console.Write("Boş Geçilemez Lütfen En Fazla 4 Basamaklı Bir Sayı Giriniz \n");
+        goto ilk;
+    }
+    if (gir.Length > 4)
+    {
+        Console.Write("\nLütfen En Fazla 4 Basamaklı Bir Sayı Giriniz\n");
+        Console.ReadKey(true);
+        Console.Clear();
+        goto ilk;
+    }
+}
+while (karakter.Key != ConsoleKey.Enter);
+Console.WriteLine("");
+x = Convert.ToInt32(gir);
+
+for (i = 1; i > 0; i++)
+{
+    sayac = 0;
+    sum = ((i)*(i+1)/2);
+
+    for (j = 1; j <= Math.Sqrt(sum); j++)
+    {
+        if (sum % j == 0)
+        {
+            sayac+=2;
+            if (sayac == x)
+            {
+                Console.WriteLine(sum);
+                Console.ReadKey();
+            }
+        }   
+    }
+}
