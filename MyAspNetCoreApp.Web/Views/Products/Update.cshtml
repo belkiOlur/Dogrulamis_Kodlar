@@ -5,7 +5,6 @@
 
 <h1>Ürün güncelleme</h1>
 @model Product
-<h1>Ürün ekleme</h1>
 <form asp-controller="Products" asp-action="Update" asp-route-productID="@Model.Id" method="post">
     
     <label>Ürün İsmi :</label>
@@ -22,10 +21,10 @@
     <input type="text" asp-for="Color" />
     <br />
     <label>Yükseklik :</label>
-    <input type="text" asp-for="Height" />
+    <input type="text" asp-for="Weigth" />
     <br />
     <label>Genişlik :</label>
-    <input type="text" asp-for="Weigth" />
+    <input type="text" asp-for="Height" />
     <br />
     <button type="submit">Ürün Kaydet</button>
 
