@@ -21,9 +21,9 @@
         <th>Fiyat</th>
         <th>Stok</th>        
         <th>Renk</th>
-        <th>Genişlik</th>
         <th>Yükseklik</th>
-            <th>İşlem</th>
+        <th>Genişlik</th>       
+        <th>İşlem</th>
         </tr>
     </thead>
     <tbody>
@@ -35,8 +35,14 @@
                 <td>@item.Price</td>
                   <td>@item.Stock</td>
                 <td>@item.Color</td>
-                <td>@item.Height</td>
                 <td>@item.Weigth</td>
+                <td>@item.Height</td>
+
+
+
+
+
+
                   <td>
                       <a asp-controller="products" asp-action="remove" asp-route-id="@item.Id">Sil</a>
                       

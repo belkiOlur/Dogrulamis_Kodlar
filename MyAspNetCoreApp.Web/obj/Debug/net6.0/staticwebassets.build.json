@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "LJL05Q8ya8/DsU27iWLGyPV9O1Pla119PcuW1WBB3z0=",
+=======
+  "Hash": "HZ7aPYlMZpjI985VbGuQN6pTXrJ8kD3FWL8g6EN8vHo=",
+>>>>>>> f45ce05d39c3e147fa82ced516ef2fe8c07f42a5
   "Source": "MyAspNetCoreApp.Web",
   "BasePath": "_content/MyAspNetCoreApp.Web",
   "Mode": "Default",
@@ -102,7 +106,28 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\İBRAHİM GÜN\\Documents\\GitHub\\Dogrulamis_Kodlar\\MyAspNetCoreApp.Web\\wwwroot\\js\\site.js",
+=======
+      "Identity": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\TurkcellMyAspNetCoreApp-master\\MyAspNetCoreApp.Web\\wwwroot\\images\\1.JPG",
+      "SourceId": "MyAspNetCoreApp.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\TurkcellMyAspNetCoreApp-master\\MyAspNetCoreApp.Web\\wwwroot\\",
+      "BasePath": "_content/MyAspNetCoreApp.Web",
+      "RelativePath": "images/1.JPG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\1.JPG"
+    },
+    {
+      "Identity": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\TurkcellMyAspNetCoreApp-master\\MyAspNetCoreApp.Web\\wwwroot\\js\\site.js",
+>>>>>>> f45ce05d39c3e147fa82ced516ef2fe8c07f42a5
       "SourceId": "MyAspNetCoreApp.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\İBRAHİM GÜN\\Documents\\GitHub\\Dogrulamis_Kodlar\\MyAspNetCoreApp.Web\\wwwroot\\",
