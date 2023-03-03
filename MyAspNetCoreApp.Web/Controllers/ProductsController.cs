@@ -7,13 +7,9 @@ namespace MyAspNetCoreApp.Web.Controllers
     public class ProductsController : Controller
     {
         private AppDbContext _context;
-<<<<<<< HEAD
 
         private IHelper _helper;
 
-=======
-        private IHelper _helper;
->>>>>>> f45ce05d39c3e147fa82ced516ef2fe8c07f42a5
         private readonly ProductRepository _productRepository;
         public ProductsController(AppDbContext context, IHelper helper)
         {
@@ -37,15 +33,12 @@ namespace MyAspNetCoreApp.Web.Controllers
         public IActionResult Index([FromServices]IHelper helper2)
         {
             var text = "Beril";
-<<<<<<< HEAD
-            
-            var products = _context.Products.ToList();
-=======
+
             var upperText = _helper.Upper(text);
             var status = _helper.Equals(helper2);
             
            var products = _context.Products.ToList();
->>>>>>> f45ce05d39c3e147fa82ced516ef2fe8c07f42a5
+
 
             return View(products);
         }

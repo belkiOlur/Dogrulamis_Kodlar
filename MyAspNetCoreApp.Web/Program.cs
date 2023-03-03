@@ -14,12 +14,9 @@ builder.Services.AddDbContext<AppDbContext>(options => {
 options.UseSqlServer(builder.Configuration.GetConnectionString("SqlCon"));
 });
 
-<<<<<<< HEAD
-builder.Services.AddSingleton<IHelper, Helper>();
 
-=======
 builder.Services.AddTransient<IHelper, Helper>();
->>>>>>> f45ce05d39c3e147fa82ced516ef2fe8c07f42a5
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
